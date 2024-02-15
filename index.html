@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ivoire.DT - Ivoire Distribution Transit</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap'>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/shop.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="antialiased">
+  
+
+<div class="bg-indigo-700 text-indigo-200 md:text-center py-2 px-4">
+  Le roi de la distribution aux <a class="font-bold underline hover:text-indigo-100">meilleurs prix</a>.
+  Pour plus d'information sur nos offres <a href="#" class="font-bold underline hover:text-indigo-100">Discutez avec un agent</a>.
+</div>
+
+<div class="bg-white shadow-sm sticky top-0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 md:py-4">
+    <div class="flex items-center justify-between md:justify-start">
+      <!-- Menu Trigger -->
+      <button type="button" class="md:hidden w-10 h-10 rounded-lg -ml-2 flex justify-center items-center">
+        <svg class="text-gray-500 w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <!-- ./ Menu Trigger -->
+
+      <a href="#" class="font-bold text-gray-700 text-2xl">Ivoire.DT</a>
+
+      <div class="hidden md:flex space-x-3 flex-1 lg:ml-8">
+        <a href="index.html" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Accueil</a>
+        <a href="produits.html" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Produits</a>
+        <a href="services.html" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Services</a>
+        <a href="business.html" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Business</a>
+        <a href="a-savoir.html" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">A Savoir</a>
+        <a href="supports.html" class="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">Supports</a>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <div class="relative hidden md:block">
+          <input type="search" class="pl-10 pr-2 h-10 py-1 rounded-lg border border-gray-200 focus:border-gray-300 focus:outline-none focus:shadow-inner leading-none" placeholder="Rechercher">
+          <svg class="h-6 w-6 text-gray-300 ml-2 mt-2 stroke-current absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+
+        <a href="#" class="flex h-10 items-center px-2 rounded-lg border border-gray-200 hover:border-gray-300 focus:outline-none hover:shadow-inner">
+          <svg class="h-6 w-6 leading-none text-gray-300 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="pl-1 text-gray-500 text-md">0</span>
+        </a>
+
+        <button type="button" class="hidden md:block w-10 h-10 rounded-lg bg-gray-100 border border-gray-200 flex justify-center items-center">
+          <img src="https://avatars.dicebear.com/api/bottts/2.svg" alt="bottts" width="28" height="28" class="rounded-lg mx-auto">
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Mobile -->
+    <div class="relative md:hidden">
+      <input type="search" class="mt-1 w-full pl-10 pr-2 h-10 py-1 rounded-lg border border-gray-200 focus:border-gray-300 focus:outline-none focus:shadow-inner leading-none" placeholder="Search">
+
+      <svg class="h-6 w-6 text-gray-300 ml-2 mt-3 stroke-current absolute top-0 left-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </div>
+    <!-- ./ Search Mobile -->
+
+  </div>
+</div>
+
+<div class="py-6">
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="flex flex-col md:flex-row -mx-4">
+      <div class="md:flex-1 px-4">
+        <div x-data="{ image: 1 }" x-cloak>
+          <div class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4">
+            <div x-show="image === 1" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
+              <span class="text-5xl">10000%</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="md:flex-1 px-4">
+        <h2 class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</h2>
+
+        <div class="flex items-center space-x-4 my-4">
+          <div>
+            <div class="rounded-lg bg-gray-100 flex py-2 px-3">
+              <span class="text-indigo-400 mr-1 mt-1">Reduction</span>
+              <span class="font-bold text-indigo-600 text-3xl">14%</span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <p class="text-green-500 text-xl font-semibold">Profitez de 14% sur vos expéditions.</p>
+            <p class="text-gray-400 text-sm">Tout Taxes Inclu.</p>
+          </div>
+        </div>
+
+        <p class="text-gray-500">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae exercitationem porro saepe ea harum corrupti vero id laudantium enim, libero blanditiis expedita cupiditate a est.</p>
+
+        <div class="flex py-4 space-x-4">
+          <div class="relative">
+            <input type="text" id="company" placeholder="Nom de votre entreprise">
+          </div>
+
+          <button type="button" class="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">
+            Simuler un devis
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="logo-slider">
+      <div class="logo-slide-track">
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/4Rivers.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/AVT.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CareerSource.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CFEC.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CityofOrlando.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/CommunityCoordinatedCare.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/DentalSociety.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/DrPhillips.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Ferran.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/FloridaADA.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/FloridaHospital.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Goodwill.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/HarvardJolly.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/HiltonOrlando.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/IndraSystems.png" alt="" />
+        </div>   
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/JobsPartnership.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Kenworth.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/L3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Lockheed.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/MACF.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Marriott.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Mitsubishi.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/NCS.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Northrop.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/OrangeCountyFarmBureau.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/OrlandoHealth.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/ProImageSolutions.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/PublicAllies.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/SeaWorld.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/SecondHarvest.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/UF.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Universal.png" alt="" />
+        </div>   
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/UP.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/WaltDisney.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://www.orangetechcollege.net/UserFiles/Servers/Server_86919/Image/Partners/Wyndham.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section">
+    <article class="features-group">
+      <div class="features-image">
+        <img src="https://assets.codepen.io/495197/undraw_Booking_re_gw4j.svg" alt="Illustration of a man touching a large check icon">
+      </div>
+      <div class="features-text">
+        <h2>CE QU'IL FAUT SAVOIR DE NOTRE SOCIÉTÉ</h2>
+        <p>IVOIRE .DT a été créée en 2017 afin d’ajouter à ces services une offre variée de produits. Depuis sa création, IVOIRE .DT se donne pour mission de fournir aux sociétés et aux détaillants de vehicules et d'engins les outils et les services qui leur permettront de concurrencer les grandes entreprises de l'automobile.</p><br>
+
+        <p>IVOIRE .DT élargi ses produits et services avec son module de transitaire pour amener ses clients et partenaire à beneficier d'une assurance sans fail.</p><br>
+
+        <p>IVOIRE .DT est un leader ivoirien des pièces de véhicule et d'engin pour les tiers et les entreprises. Plus de 1200 revendeurs à travers le pays font aujourd’hui appel à IVOIRE .DT pour assurer le monitoring des installations qu’ils effectuent auprès de leurs clients.</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="section">
+
+    <div class="features-text" style="text-align: center;padding-bottom: 30px;">
+      <h2 style="text-transform: uppercase;">Nos nouveautés</h2>
+      <p>Découvrez nos derniers articles parmi une grande variété de produits et procurez-les vous en un clic.</p>
+    </div>
+    <div class="product-row">
+      
+      <div class="card-list">
+        <article class="card">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85" alt="An orange painted blue, cut in half laying on a blue background" />
+          </figure>
+          <div class="card-header">
+            <a>When life gives you oranges</a>
+            <button class="icon-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+              </svg>
+
+            </button>
+          </div>
+
+          <div class="card-footer">
+
+            <div class="inner">
+              <div class="layer-interface">
+                <input data-field="item-base-price" type="text" value="75000 XOF" readonly><br>
+                <button data-command="item-add" class="proceed-btn">Proceder</button>
+              </div>
+              <div class="card-meta card-meta--date">
+                Min : 100p | Max : 500p.
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="card-list">
+        <article class="card">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85" alt="An orange painted blue, cut in half laying on a blue background" />
+          </figure>
+          <div class="card-header">
+            <a>When life gives you oranges</a>
+            <button class="icon-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+              </svg>
+
+            </button>
+          </div>
+
+          <div class="card-footer">
+
+            <div class="inner">
+              <div class="layer-interface">
+                <input data-field="item-base-price" type="text" value="75000 XOF" readonly><br>
+                <button data-command="item-add" class="proceed-btn">Proceder</button>
+              </div>
+              <div class="card-meta card-meta--date">
+                Min : 100p | Max : 500p.
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="card-list">
+        <article class="card">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85" alt="An orange painted blue, cut in half laying on a blue background" />
+          </figure>
+          <div class="card-header">
+            <a>When life gives you oranges</a>
+            <button class="icon-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+              </svg>
+
+            </button>
+          </div>
+
+          <div class="card-footer">
+
+            <div class="inner">
+              <div class="layer-interface">
+                <input data-field="item-base-price" type="text" value="75000 XOF" readonly><br>
+                <button data-command="item-add" class="proceed-btn">Proceder</button>
+              </div>
+              <div class="card-meta card-meta--date">
+                Min : 100p | Max : 500p.
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="card-list">
+        <article class="card">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85" alt="An orange painted blue, cut in half laying on a blue background" />
+          </figure>
+          <div class="card-header">
+            <a>When life gives you oranges</a>
+            <button class="icon-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+              </svg>
+
+            </button>
+          </div>
+
+          <div class="card-footer">
+
+            <div class="inner">
+              <div class="layer-interface">
+                <input data-field="item-base-price" type="text" value="75000 XOF" readonly><br>
+                <button data-command="item-add" class="proceed-btn">Proceder</button>
+              </div>
+              <div class="card-meta card-meta--date">
+                Min : 100p | Max : 500p.
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="card-list">
+        <article class="card">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85" alt="An orange painted blue, cut in half laying on a blue background" />
+          </figure>
+          <div class="card-header">
+            <a>When life gives you oranges</a>
+            <button class="icon-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+              </svg>
+
+            </button>
+          </div>
+
+          <div class="card-footer">
+
+            <div class="inner">
+              <div class="layer-interface">
+                <input data-field="item-base-price" type="text" value="75000 XOF" readonly><br>
+                <button data-command="item-add" class="proceed-btn">Proceder</button>
+              </div>
+              <div class="card-meta card-meta--date">
+                Min : 100p | Max : 500p.
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="card-list">
+        <article class="card">
+          <figure class="card-image">
+            <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDcwMTUwOQ&ixlib=rb-1.2.1&q=85" alt="An orange painted blue, cut in half laying on a blue background" />
+          </figure>
+          <div class="card-header">
+            <a>When life gives you oranges</a>
+            <button class="icon-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block" id="Heart">
+                <path d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
+              </svg>
+
+            </button>
+          </div>
+
+          <div class="card-footer">
+
+            <div class="inner">
+              <div class="layer-interface">
+                <input data-field="item-base-price" type="text" value="75000 XOF" readonly><br>
+                <button data-command="item-add" class="proceed-btn">Proceder</button>
+              </div>
+              <div class="card-meta card-meta--date">
+                Min : 100p | Max : 500p.
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="section">
+    <article class="features-group">
+      <div class="features-image inverse">
+        <img src="https://assets.codepen.io/495197/undraw_Portfolio_re_qwm5.svg" alt="Illustration of a woman standing next to a screen with portfolio items">
+      </div>
+      <div class="features-text">
+        <h2>AU SERVICE DE L’INDUSTRIE ET DE L'AUTOMOBILE</h2>
+        <p>Avec plus de 10 ans d’expertise, IVOIRE .DT œuvre à une concurrence juste au sein de l’industrie de l'automobile. Nous n’effectuons aucune installation mais nous fournissons du matériel et des équipements indispensables et des services de soutien aux revendeurs.</p><br>
+
+        <p>Nous proposons un panel complet de services : du soutien aux ventes et du soutien technique, de nombreuses options de livraison ainsi que des tests pour vos forfaits de données mobiles. Nous vous soutenons dans l’atteinte de vos objectifs.</p><br>
+
+        <p>Nous effectuons nos prestations avec transparence et dans l’écoute attentive de vos besoins. Découvrez nos services au complet.</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="section" class="logo-section">
+
+    <h1>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      Ceux qui nous font confiance
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+    </h1>
+        
+    <div id="logo-grid">
+      <div class="partner-logo"><a ><img src="http://rapidscience.org/sarcoma/images/partners/lilly.png" /></a></div>
+      <div class="partner-logo"><a ><img src="http://rapidscience.org/sarcoma/images/partners/emdserono.png" /></a></div>
+      <div class="partner-logo"><a ><img src="http://rapidscience.org/sarcoma/images/partners/janssen.png" /></a></div>
+      <div class="partner-logo"><a ><img src="http://rapidscience.org/sarcoma/images/partners/mellon.png" /></a></div>
+      <div class="partner-logo"><a ><img src="http://rapidscience.org/sarcoma/images/partners/moore.png" /></a></div>
+      <div class="partner-logo"><a ><img src="http://rapidscience.org/sarcoma/images/partners/nih.png" /></a></div>
+      <div class="partner-logo"><a><img src="http://rapidscience.org/sarcoma/images/partners/peakedhill.png" /></a></div>
+      <div class="partner-logo"><a ><img src="http://rapidscience.org/sarcoma/images/partners/mellon.png" /></a></div>
+          
+    </div>
+
+  </section>
+
+  <section id="section">
+    <article class="features-group">
+      <div class="features-image">
+        <img src="https://assets.codepen.io/495197/undraw_Business_plan_re_0v81.svg" alt="Illustration of a man in a suit pointing to a bar chart that is going up">
+      </div>
+      <div class="features-text">
+        <h2>DEVELOPPONS ENSEMBLE</h2>
+        <p>La collaboration se produit plus souvent que nous ne le pensons. Que ce soit pour un projet de travail, un effort créatif ou un problème quotidien, des situations surviennent où cela est nécessaire ou nous le recherchons par nous-mêmes.</p><br>
+        <p><b>Que vous soyez un particulier ou une entreprise, vous estimez notre intervention dans votre projet où vous envisagez nous confiés une tache precise ?</b></p><br>
+        <p>Contactez-nous sans plus tarder. <a href="" style="font-weight:bold;text-decoration: underline;">Contactez un agent</a> </p>
+      </div>
+    </article>
+  </section>
+</div>
+  </div>
+<!-- partial -->
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js'></script>
+</body>
+
+<footer class="site-footer">
+  <div class = "footercontainer">
+
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src = " " class ="logo-img">
+        </div>
+
+        <div class="grid-container">
+          <div><a href="">A Savoir</a></div>   
+          <div><a href="">Protection Social</a></div>   
+          <div><a href="">Finance</a></div>   
+          <div><a href="">Jobs</a></div>   
+
+          <div><a href="">Investisseurs</a></div>   
+          <div><a href="">Partenaires</a></div>   
+          <div><a href="">Documents</a></div>
+          <div><a href="">Règlements</a></div>
+        </div>
+
+        <div class="grid-item">
+          <div class = "social-buttons">
+            <p></p>
+          </div>
+        </div>  
+
+        <div class="grid-item">
+          <div class = "social-buttons">
+            <a href= ""><i class="fab fa-whatsapp circle-icon"></i></a>
+            <a href= ""><i class="fab fa-facebook circle-icon"></i></a>
+            <a href= ""><i class="fab fa-linkedin-in circle-icon"></i></a>
+            <a href= ""><i class="fab fa-twitter circle-icon"></i></a>
+          </div>
+        </div>  
+  
+      </div>
+      <hr>
+
+      <p>Copyright © 2024 | Ivoire .DT | Ivoire Distribution Transit. Tout droit reserver.</p>
+
+  </div>
+</footer>
+</html>
